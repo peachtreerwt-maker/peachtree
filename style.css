@@ -1551,8 +1551,7 @@ section {
     }
 
     .nav-links {
-        display: none;
-        /* simple mobile hide for now */
+        /* Mobile styles handled in @media (max-width: 1024px) */
     }
 
     .disciplines-grid {
