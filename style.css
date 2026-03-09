@@ -1680,13 +1680,13 @@ section {
         width: 280px;
         background-color: var(--color-white) !important;
         flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
+        justify-content: flex-start;
+        gap: 1.5rem;
         box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
         transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         transform: translateX(100%);
         z-index: 9999;
-        padding: 4rem 2rem;
+        padding: 6rem 2rem;
         list-style: none;
         /* Ensure no bullets */
     }
