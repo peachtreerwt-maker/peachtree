@@ -243,31 +243,31 @@ section {
 .menu-toggle {
     display: none;
     flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 24px;
+    justify-content: center;
+    gap: 6px;
+    width: 32px;
+    height: 32px;
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
-    z-index: 1001;
+    z-index: 10000;
+    /* Higher than .nav-links */
 }
 
 .menu-toggle span {
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: var(--color-blue);
-    border-radius: 10px;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    /* Bouncy transition */
+    border-radius: 4px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     transform-origin: center;
 }
 
-/* Playful offset for the middle bar */
+/* Playful offset for the middle bar - minimalist touch */
 .menu-toggle span:nth-child(2) {
-    width: 75%;
-    align-self: flex-end;
+    width: 100%;
 }
 
 .nav-overlay {
@@ -1697,6 +1697,7 @@ section {
 
     .menu-toggle.active span:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
+        background-color: var(--color-blue);
     }
 
     .menu-toggle.active span:nth-child(2) {
@@ -1706,6 +1707,7 @@ section {
 
     .menu-toggle.active span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+        background-color: var(--color-blue);
     }
 
     .hero {
