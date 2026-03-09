@@ -59,7 +59,7 @@ body {
     color: var(--color-text);
     line-height: 1.6;
     overflow-x: hidden;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     /* Space for the fixed info ticker */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1454,7 +1454,7 @@ section {
 /* --- 8. Floating WhatsApp Button --- */
 .whatsapp-float {
     position: fixed;
-    bottom: 70px;
+    bottom: 80px;
     /* Push up above the info ticker */
     right: 40px;
     background-color: #25D366;
