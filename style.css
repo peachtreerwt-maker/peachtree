@@ -291,13 +291,11 @@ section {
 
 /* Hero Section */
 .hero {
-    padding-top: calc(var(--spacing-xl) + 80px);
-    /* Account for navbar */
-    min-height: 90vh;
+    padding-top: 120px;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     position: relative;
-    /* Create stacking context for balloon */
     z-index: 10;
 }
 
@@ -313,10 +311,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* Lifted it up */
     padding: 0 2rem;
-    margin-top: -3rem;
-    /* Higher position */
+    margin-top: -1rem;
 }
 
 .hero-subtitle {
